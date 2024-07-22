@@ -17,13 +17,17 @@ export const Signin=()=>{
         email: "",
         password: ""
     })
-    return <div className="grid grid-cols-1 sm:grid-cols-2">
+    return <>
+        <div className="grid grid-cols-1 sm:grid-cols-2">
         <div>
-        <div className="flex justify-center items-center h-[100vh]">
-            <div className="flex flex-col gap-1">
+        <div className="flex justify-center items-center h-[100vh] w-[80vw]">
+            <div className="flex flex-col gap-1 border-2 drop-shadow-lg py-20 px-10">
                 <div className="font-bold text-md sm:xl md:2xl lg:text-4xl">Sign In</div>
                 <div className="flex flex-col sm:flex-row">
-                <div className="text-gray-500 text-sm md:text-md lg:text-lg font-semibold">Enter your email and password to access your blog account.</div>
+                <div className="text-gray-500 text-sm md:text-md lg:text-lg font-semibold">
+                    <div>
+                        Enter your email and password to access your blog account.</div>
+                    </div>
                
                 </div>
                 <div className="mt-5">
@@ -63,4 +67,7 @@ export const Signin=()=>{
             <Quotecomp/>
         </div>
     </div>
+    </>
+    
+    
 }

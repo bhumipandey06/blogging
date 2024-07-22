@@ -21,8 +21,8 @@ export const Authcomp=({title,discription}:props)=>{
 
     return <>
         <div className="flex justify-center items-center h-[100vh]">
-            <div className="flex flex-col">
-                <div className="font-bold text-md sm:xl md:2xl lg:text-4xl">{title}</div>
+            <div className="flex flex-col border-2 drop-shadow-lg px-10 py-20">
+                <div className="font-bold text-md sm:xl md:2xl lg:text-4xl ">{title}</div>
                 <div className="flex flex-col sm:flex-row">
                 <div className="text-gray-500 text-sm md:text-md lg:text-lg font-semibold">{discription}</div>
                 <button className="lg:pl-2 text-gray-500 underline" onClick={()=>{navigate('/signin')}}>Login</button>
@@ -49,6 +49,7 @@ export const Authcomp=({title,discription}:props)=>{
                         localStorage.setItem("token",`Bearer ${jwt}`);
                         localStorage.setItem("token",`Bearer ${jwt}`);
                         localStorage.setItem("name",input.name || "");
+                        localStorage.setItem("userId",response.data.userId);
                         navigate('/blog');
                     }catch(err){
                         navigate('error');

@@ -32,7 +32,7 @@ function App() {
             <Route path='/Success' element={<SuccPost/>}/>
             <Route path='/error' element={<Errorpage/>}/>
             <Route path='/myblog' element={<MyBlog/>}/>
-            <Route path='/landing' element={<Landing/>}/>
+            <Route path='/' element={<Landing/>}/>
           </Routes>
 
       </BrowserRouter>

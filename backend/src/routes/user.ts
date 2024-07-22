@@ -37,8 +37,16 @@ if(!success){
       }
     })
 
+    const userId=await prisma.user.findUnique({
+      where:{
+        email: body.email
+      },select:{
+        id: true
+      }
+    })
+
     const jwt=await sign({id: User.id},c.env.JWT_SECRET);
-    return c.json({jwt});
+    return c.json({jwt,userId});
 
   }catch(err){
     c.status(403);
