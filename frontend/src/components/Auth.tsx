@@ -20,7 +20,7 @@ export const Authcomp=({title,discription}:props)=>{
     })
 
     return <>
-        <div className="flex justify-center items-center h-[100vh]">
+        <div className="flex justify-center items-center h-[100vh] w-auto">
             <div className="flex flex-col border-2 drop-shadow-lg px-10 py-20">
                 <div className="font-bold text-md sm:xl md:2xl lg:text-4xl ">{title}</div>
                 <div className="flex flex-col sm:flex-row">

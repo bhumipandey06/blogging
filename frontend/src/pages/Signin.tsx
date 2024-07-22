@@ -20,15 +20,12 @@ export const Signin=()=>{
     return <>
         <div className="grid grid-cols-1 sm:grid-cols-2">
         <div>
-        <div className="flex justify-center items-center h-[100vh]">
+        <div className="flex justify-center items-center h-[100vh] w-auto">
             <div className="flex flex-col gap-1 border-2 drop-shadow-lg py-20 px-10">
                 <div className="font-bold text-md sm:xl md:2xl lg:text-4xl">Sign In</div>
                 <div className="flex flex-col sm:flex-row">
-                <div className="text-gray-500 text-sm md:text-md lg:text-lg font-semibold">
-                    <div>
-                        Enter your email and password to access your blog account.</div>
-                    </div>
-               
+                <div className="text-gray-500 text-sm md:text-md lg:text-lg font-semibold">Don't have an account</div>
+                <button className="lg:pl-2 text-gray-500 underline" onClick={()=>{navigate('/signup')}}>Sign up</button>
                 </div>
                 <div className="mt-5">
                     <Inputcomp title="Email" type="text" placeholder="Enter your email" onchange={(e)=>{
@@ -63,7 +60,7 @@ export const Signin=()=>{
         </div>
         
         </div>
-        <div className="invisible sm:visible">
+        <div className="invisible absolute sm:visible sm:static">
             <Quotecomp/>
         </div>
     </div>

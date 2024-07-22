@@ -7,7 +7,7 @@ export const Signup=()=>{
         <div>
         <Authcomp title='Create an account' discription='Already have an account?'/>
         </div>
-        <div className="invisible sm:visible">
+        <div className="absolute invisible sm:visible sm:static">
             <Quotecomp/>
         </div>
     </div>
