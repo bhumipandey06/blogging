@@ -20,7 +20,7 @@ export const Signin=()=>{
     return <>
         <div className="grid grid-cols-1 sm:grid-cols-2">
         <div>
-        <div className="flex justify-center items-center h-[100vh] w-[80vw]">
+        <div className="flex justify-center items-center h-[100vh]">
             <div className="flex flex-col gap-1 border-2 drop-shadow-lg py-20 px-10">
                 <div className="font-bold text-md sm:xl md:2xl lg:text-4xl">Sign In</div>
                 <div className="flex flex-col sm:flex-row">
