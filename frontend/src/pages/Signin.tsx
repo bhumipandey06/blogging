@@ -22,7 +22,7 @@ export const Signin=()=>{
         <div>
         <div className="flex justify-center items-center h-[100vh] w-auto">
             <div className="flex flex-col gap-1 border-2 drop-shadow-lg py-20 px-10">
-                <div className="font-bold text-md sm:xl md:2xl lg:text-4xl">Sign In</div>
+                <div className="font-bold text-md sm:xl md:2xl lg:text-4xl">Log in to your account</div>
                 <div className="flex flex-col sm:flex-row">
                 <div className="text-gray-500 text-sm md:text-md lg:text-lg font-semibold">Don't have an account</div>
                 <button className="lg:pl-2 text-gray-500 underline" onClick={()=>{navigate('/signup')}}>Sign up</button>
