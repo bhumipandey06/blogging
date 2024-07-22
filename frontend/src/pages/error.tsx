@@ -12,7 +12,8 @@ export const Errorpage=()=>{
             </div>
             <div className="flex flex-col items-center w-[90vw] gap-4">
                 <button className="bg-black text-white py-1 px-4 rounded active:opacity-[0.8] duration-100/6" onClick={()=>{
-                    navigete('/blog');
+                    localStorage.clear();
+                    navigete('/');
                 }}>Go to Homepage</button>
 
             </div>
