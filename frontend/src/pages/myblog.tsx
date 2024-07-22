@@ -62,6 +62,7 @@ export const MyBlog=()=>{
     await axios.post(`${BACKEND_URL}/api/v1/user/delete`,{
         id: blog.id
     })
+    navigate('/myblog');
 }}/>)}
     </div>
             </>
